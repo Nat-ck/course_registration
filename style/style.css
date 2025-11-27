@@ -104,6 +104,7 @@ table td {
 table tr:hover {
   background: #ffffff;
 }
+/* ------------------ Footer--------------------*/
 footer{
  display:flex;
  justify-content: center;

@@ -5,14 +5,14 @@ $message = '';
 if ($_SERVER['REQUEST_METHOD'] === 'POST'){
     $courseCode = $_POST['code'] ?? '';
     $courseName = $_POST['name'] ?? '';
-    $prerequisite = $_POST['prerequisite'] ?? '';
+    $pre = $_POST['pre'] ?? '';
     $day = $_POST['day'] ?? '';
     $time = $_POST['time'] ?? '';
 }
 
 if ($courseCode){
-    $stmt = $dbConnection->prepare('INSERT INTO courses(Course-name, prerequisite, day, time, Course-code) VALUES(?,?,?,?,?)');
-    $stmt->bind_param('ssssi', $courseName,  $prerequisite, $day, $time, $courseCode);
+    $stmt = $dbConnection->prepare('INSERT INTO courses(course_code, course_name, pre, day, time) VALUES(?,?,?,?,?)');
+    $stmt->bind_param('sssss', $courseCode, $courseName, $pre, $day, $time);
     $stmt->execute();
     header("Location: ../templates/index.html");
     exit ;
