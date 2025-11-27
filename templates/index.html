@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JP2 website</title>
+    <link href="../style/style.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <header>
+        <h1>JP2 Course Registration & Scheduling </h1>
+    </header>
+    <div class="courses">
+        <h2>Availabel Courses</h2>
+        <form method="POST" action="../php/create.php">
+            <input type="text" name="code" placeholder="Course code" required><br>
+            <input type="text" name="name" placeholder="Course name" required><br>
+            <input type="text" name="prerequisite" placeholder="prerequisite"><br>
+            <select name="day" required>
+                <option value="">Select</option>
+                <option>Monday</option>
+                <option>Tuesday</option>
+                <option>Wednesday</option>
+                <option>Thursday</option>
+                <option>Friday</option>
+            </select>
+            <select name="time" required><br>
+                <option value="">Select </option>
+                <option>8:00-11:00</option>
+                <option>2:00-5:00</option>
+            </select>
+            <button type="Submit"> Submit </button>
+        </form>
+ 
+        <h2>Available Courses</h2>
+        <table>
+            <tr>
+                <th>Web design</th> 
+                <th>Networking</th>
+                <th>Camera & Video Editing</th>
+                <th>Solar installation</th>
+                <th>Electrical installation</th>
+                <th>Music</th>
+
+            </tr>
+        </table>
+<footer>
+    <p>&copy; 2025 School of JP2 piassa. </p>
+</footer>
+
+</body>
+</html>

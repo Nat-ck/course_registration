@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Georgia", serif;
+}
+
+body {
+  background: #ffffff;
+  padding: 30px;
+  color: #2c3e50;
+}
+
+/* ------------------ TITLES ------------------ */
+h1 {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 30px;
+  color: #0a2a66; /* Deep university blue */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 4px solid #c89b3c; /* Gold underline */
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size: 22px;
+  color: #0a2a66;
+  margin-bottom: 15px;
+}
+
+/* ------------------ CARD (SECTIONS) ------------------ */
+.card {
+  background: #ffffff;
+  border: 1px solid #e0e5ec;
+  border-left: 6px solid #0a2a66;  
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* ------------------ FORM ------------------ */
+form input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border: 1px solid #c4c9d1;
+  border-radius: 6px;
+  font-size: 16px;
+  background: #fefefe;
+  transition: 0.2s;
+}
+
+form input:focus {
+  border-color: #0a2a66;
+  box-shadow: 0 0 6px rgba(10, 42, 102, 0.3);
+}
+
+/* ------------------ BUTTON ------------------ */
+button {
+  padding: 12px 20px;
+  background: #0a2a66;
+  color: #ffd26a;  
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-family: "Georgia", serif;
+}
+
+button:hover {
+  background: #051a45;
+}
+
+/* ------------------ TABLE ------------------ */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.06);
+}
+
+table thead {
+  background: #0a2a66;
+  color: #ffd26a;  
+  font-weight: bold;
+}
+
+table th,
+table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #ddd;
+  font-size: 15px;
+}
+
+table tr:hover {
+  background: #ffffff;
+}
+footer{
+ display:flex;
+ justify-content: center;
+ margin:60px;
+ padding:10px;
+}
